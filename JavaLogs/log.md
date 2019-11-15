@@ -10,3 +10,7 @@
 -->
 
 # Java Log
+
+### November 14, 2019
+
+**Progress**: Initiated a terminal program that consists of a library/book store system. This program will keep basic book information such as, author, publisher, genre and price. No input prompts will be made, all information will be hardcoded into the program. An array will exist which contains a quantity for each book sold and will prompt a list of each book sold and the total charge for each book.
