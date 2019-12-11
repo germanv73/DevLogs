@@ -13,4 +13,8 @@
 
 ### November 14, 2019
 
-**Progress**: Initiated a terminal program that consists of a library/book store system. This program will keep basic book information such as, author, publisher, genre and price. No input prompts will be made, all information will be hardcoded into the program. An array will exist which contains a quantity for each book sold and will prompt a list of each book sold and the total charge for each book.
+**Progress**: Initiated a terminal/cmd program that consists of a simple library/book store system. This program will keep basic book information such as, author, publisher, genre and price. No input prompts will be made, all information will be hardcoded into the program. An array will exist which contains a quantity for each book sold and will prompt a list of each book sold and the total charge for each book.
+
+**(update)**
+
+Publisher class has two variables, Name and State. Book class has four variables, TItle, Author, Publisher (class), and Price. In addition to the standard setters and getter, Book class will also have a calculateCharge method that will take a integer for the quantity and will multiply with the Price variable to determine the total price. The last two classes will be Fiction class which will inherit the Book class and add one additional variable, FictionCode, and the NonFiction class which will have one additional variable as well called CategoryCode.
