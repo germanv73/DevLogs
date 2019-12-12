@@ -13,6 +13,8 @@
 
 ### November 14, 2019
 
+#### Project BookSystem
+
 **Progress**: Initiated a terminal/cmd program that consists of a simple library/book store system. This program will keep basic book information such as, author, publisher, genre and price. No input prompts will be made, all information will be hardcoded into the program. An array will exist which contains a quantity for each book sold and will prompt a list of each book sold and the total charge for each book.
 
 **(update)**
@@ -20,11 +22,15 @@ Publisher class has two variables, Name and State. Book class has four variables
 
 ### December 11, 2019
 
+#### Project BookSystem
+
 **Progress**: Finished creating both Fiction and NonFiction classes. I am not 100% certain about Fiction and NonFiction inheriting Book class, but I did look up a reference book to get a quick idea of how it works. I will not be able to test both classes until I create a test class in order to call the two classes.
 
 Started BookSystem class which will contain the main method. So far I have String array of arrays which contains each book's information. Also created a second integer array that contains the quantity amount for each book.
 
 ### December 12, 2019
+
+#### Project BookSystem
 
 **Progress**: Today I worked on the book system application. In the BookSystem class, I created another array, bookArray, which will hold all the Book objects for each book created in the process. The next step would be walking through dataArray (array of arrays) and determine if a Fiction Book or NonFiction Book will need to be created.
 
