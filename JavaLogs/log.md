@@ -33,3 +33,13 @@ Started BookSystem class which will contain the main method. So far I have Strin
 I used an if statement with a String.equals() method in order to determine if dataArray[x][0] is equal to Fiction. If it does not equal Fiction, it will go through an else statement. Next, I will need to figure out how to create a Fiction/NonFiction object inside both if/else statements so that they can be stored in the bookArray.
 
 ...
+
+The first thing I had to figure out was how to place an instance in the bookArray. I already knew that dataArray had 8 total books, so when I initiated bookArray, I made it the same length as dataArray. This also told me that as I started to walk through the dataArray, I would be able to use the counter and assign it to bookArray. So in other words, the first counter (book1) in dataArray would be created in the first index of bookArray.
+
+Now that I had figure out how to place the new Book information in its array, I had to figure out how to create a new Fiction/NonFiction book. This was actually pretty easy, just use the counter to determine which book you were currently on in dataArray. Then, use the index of that counter array to determine the parameters that would need to be passed to the Fiction/NonFiction constructor. This is where I became a bit confused when it came to passing the Publisher reference to the Non/Fiction constructor. The quick solution I came up with was the create a separate instance of a Publisher class, and pass that reference to the Non/Fiction constructor. This did work, but I am currently unsure if there is another way around this or if it is the only way to do this process. I'll look further into this at a later date.
+
+...
+
+The last thing I did in BookSystem was I used the quantities found in quantityArray and called the calculateCharge method in Book class to find the total charge for each book * quantity. I printed the book Title and the total for that book in terminal and I also combined this into a String message in order to print it out in a dialog box.
+
+And on this that note, this program is complete.
