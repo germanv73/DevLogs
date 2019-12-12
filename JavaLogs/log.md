@@ -23,3 +23,13 @@ Publisher class has two variables, Name and State. Book class has four variables
 **Progress**: Finished creating both Fiction and NonFiction classes. I am not 100% certain about Fiction and NonFiction inheriting Book class, but I did look up a reference book to get a quick idea of how it works. I will not be able to test both classes until I create a test class in order to call the two classes.
 
 Started BookSystem class which will contain the main method. So far I have String array of arrays which contains each book's information. Also created a second integer array that contains the quantity amount for each book.
+
+### December 12, 2019
+
+**Progress**: Today I worked on the book system application. In the BookSystem class, I created another array, bookArray, which will hold all the Book objects for each book created in the process. The next step would be walking through dataArray (array of arrays) and determine if a Fiction Book or NonFiction Book will need to be created.
+
+...
+
+I used an if statement with a String.equals() method in order to determine if dataArray[x][0] is equal to Fiction. If it does not equal Fiction, it will go through an else statement. Next, I will need to figure out how to create a Fiction/NonFiction object inside both if/else statements so that they can be stored in the bookArray.
+
+...
