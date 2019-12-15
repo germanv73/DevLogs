@@ -49,3 +49,11 @@ Now that I had figure out how to place the new Book information in its array, I 
 The last thing I did in BookSystem was I used the quantities found in quantityArray and called the calculateCharge method in Book class to find the total charge for each book * quantity. I printed the book Title and the total for that book in terminal and I also combined this into a String message in order to print it out in a dialog box.
 
 And on this that note, this program is complete.
+
+### December 14, 2019
+
+#### Book Review
+
+***Progress***: I am using the **Java How To Program Early Object 10e** book to learn/review numerous topics. Today, I went through chapter 4 which covered control statements. The first control statement it covered was the **if** statement. After that, it added the **if...else** statement. With this statement, it covered how to created nested if...else statements and it also gave pointers on common mistakes I should look out for. One thing I did learn that I had not done so previously was the **Conditional Operator (?:)** for the if statement. I am not entirely sure how to use this method but it will definitely be something I look into a bit further and see which way I can incorporate it into my programming.
+
+Then I reviewed the **while** statement along with a **sentinel-controlled while loop**. The difference between a non-sentinel while loop is that we previously know how many times the while loop will have to complete. But with the sentinel-controlled loop, we are not sure when the loop will have to terminate.
