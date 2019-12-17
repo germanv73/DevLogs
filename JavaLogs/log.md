@@ -60,10 +60,16 @@ Then I reviewed the **while** statement along with a **sentinel-controlled while
 
 ### December 15, 2019
 
-### Video Course
+#### Video Course
 
-**Progress**: Started a video course that will go over JSP (JavaServer Pages), Servlets, and JDBC topics. So far, I have covered the JSP fundamentals which included **Expressions**, **Scriplets**, and **Declarations**. These files are used in **.jsp** files with HTML markup is used to build webpages with Java code used throughout the page. Expressions are defined by **<%= some Java expression %>**. These are used to call a small/simple Java function. Scriplets are defined by **<% some Java code: 1 to many lines %>**. These can be used when more than one line of Java code needs to be used in order to call a function or several items need to be completed. And lastly, Declarations are defined as **<%! variable or method declaration %>**. Declarations are used to declare methods in the .jsp file. The method can then be called from anywhere in the same .jsp file.
+**Progress**: Started a video course that will go over JSP (JavaServer Pages), Servlets, and JDBC topics. So far, I have covered the JSP fundamentals which included **Expressions**, **Scriptlets**, and **Declarations**. These files are used in **.jsp** files with HTML markup is used to build webpages with Java code used throughout the page. Expressions are defined by **<%= some Java expression %>**. These are used to call a small/simple Java function. Scriptlets are defined by **<% some Java code: 1 to many lines %>**. These can be used when more than one line of Java code needs to be used in order to call a function or several items need to be completed. And lastly, Declarations are defined as **<%! variable or method declaration %>**. Declarations are used to declare methods in the .jsp file. The method can then be called from anywhere in the same .jsp file.
 
-It is recommended to keep Scriplets and Declarations to a minimum in the .jsp file. For this reason, it is recommended to create a separate Java Class which will have house all the heavy lifting Java code. the .jsp file can then call this Java Class with a simple Expression. This should help make the .jsp file easily maintainable.
+It is recommended to keep Scriptlets and Declarations to a minimum in the .jsp file. For this reason, it is recommended to create a separate Java Class which will have house all the heavy lifting Java code. the .jsp file can then call this Java Class with a simple Expression. This should help make the .jsp file easily maintainable.
 
-The course then went into reading user input from a form that was used in an HTML file. Several types of inputs were reviewed such as Drop-Down Lists, Radio Buttons, and Checkboxes. After the user inputs the information, the data that confirmed and displayed using a .jsp file using Expressions and Scriplets. These methods were simple and straightforward but will require several practice problems to ensure that I am able to fully comprehend the topic.
+The course then went into reading user input from a form that was used in an HTML file. Several types of inputs were reviewed such as Drop-Down Lists, Radio Buttons, and Checkboxes. After the user inputs the information, the data that confirmed and displayed using a .jsp file using Expressions and Scriptlets. These methods were simple and straightforward but will require several practice problems to ensure that I am able to fully comprehend the topic.
+
+### December 16, 2019
+
+#### Video course
+
+**Progress**: Today, I went back and reviewed the JSP Fundamentals previously covered. One of the items that I had previously not understood was the **session** object. I only remembered seeing it used in my code, but I did no understand exactly what session meant. After going back and reviewing this again, I now understand that the JSP built-in object **session** is a unique session for each individual user of a web app and several items can be stored to that session that can not be accessed by any other user.
