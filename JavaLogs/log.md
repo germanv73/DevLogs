@@ -70,14 +70,20 @@ The course then went into reading user input from a form that was used in an HTM
 
 ### December 16, 2019
 
-#### Video course
+#### Video Course
 
 **Progress**: Today, I went back and reviewed the JSP Fundamentals previously covered. One of the items that I had previously not understood was the **session** object. I only remembered seeing it used in my code, but I did no understand exactly what session meant. After going back and reviewing this again, I now understand that the JSP built-in object **session** is a unique session for each individual user of a web app and several items can be stored to that session that can not be accessed by any other user.
 
 ### December 29, 2019
 
-#### Video course
+#### Video Course
 
 **Progress**: Reviewed State Management with JSPs which included more information on the **session** object. After reviewing this, I covered the new subject of **Cookie**'s. I created a simple webpage that asked the user to make a selection and the webpage was then updated to reflect the choice the user made.
 
-I also looked into the difference between ArrayList<> and List<>. During one of the examples I was doing for a JSP, they created a **List<String> items = new ArrayList<String>()**, so I questioned why was the item not created as a List<String> as well. 
+I also looked into the difference between ArrayList<> and List<>. During one of the examples I was doing for a JSP, they created a **List<String> items = new ArrayList<String>()**, so I questioned why was the item not created as a List<String> as well.
+
+### December 30, 2019
+
+#### Video Course
+
+**Progress**:
