@@ -86,4 +86,4 @@ I also looked into the difference between ArrayList<> and List<>. During one of 
 
 #### Video Course
 
-**Progress**:
+**Progress**: Covered the subject about **JSP Standard Tag Library (JSTL)**. I only partially covered the Core tags such as **<c:forEach>**, **<c:if>**, and the **<c:choose>** tag that is paired with the **<c:when>** tag and the **<c:otherwise>**; the choose tag works exactly like a switch statement. I practiced these tags by building a table dynamically.
