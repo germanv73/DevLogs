@@ -92,4 +92,4 @@ I also looked into the difference between ArrayList<> and List<>. During one of 
 
 #### Video Course
 
-**Progress**: I went over Function tags which included **length**, **toUpperCase**, **statsWith**, **split**, and the **join** functions.I did find the Java documentation which provided a bigger list of Core and Function tags.
+**Progress**: I went over Function tags which included **length**, **toUpperCase**, **statsWith**, **split**, and the **join** functions.I did find the Java documentation which provided a bigger list of Core and Function tags. Then I covered the section about **Internationalization** and how it is used in to provide multiple languages for websites.
