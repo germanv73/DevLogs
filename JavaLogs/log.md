@@ -93,3 +93,9 @@ I also looked into the difference between ArrayList<> and List<>. During one of 
 #### Video Course
 
 **Progress**: I went over Function tags which included **length**, **toUpperCase**, **statsWith**, **split**, and the **join** functions.I did find the Java documentation which provided a bigger list of Core and Function tags. Then I covered the section about **Internationalization** and how it is used in to provide multiple languages for websites.
+
+### January 2, 2020
+
+#### Video Course
+
+**Progress**: I covered **Servlet** fundamentals and compared the differences between Servlets and JSPs. I covered how to read data from forms, how to create a webpage dynamically, and the difference between **GET** and **POST**.
