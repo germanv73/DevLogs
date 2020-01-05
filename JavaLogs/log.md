@@ -99,3 +99,9 @@ I also looked into the difference between ArrayList<> and List<>. During one of 
 #### Video Course
 
 **Progress**: I covered **Servlet** fundamentals and compared the differences between Servlets and JSPs. I covered how to read data from forms, how to create a webpage dynamically, and the difference between **GET** and **POST**.
+
+### January 4, 2020
+
+### Video Course
+
+**Progress**: Covered how to integrate both Servlets and JSPs together and briefly looked into the **MVC (Design-View-Controler) Design Pattern**. Created a simple application that had a Student (first name, last name, and email), a StudentDataUtil class which created instances of Students, and a Servlet which handled the browser request/response. The Servlet first calls a method in StudentDataUtil which creates several instances of Student. The instances are saved in a List, and the list is then set as an attribute of the request object. Then, still in the Servlet,  we create a dispatcher with the **RequestDispatcher** class, which will call the page (or JSP) where the data will be sent. Then finally, you **forward** the request and the response with the dispatcher. After this, the JSP then loads, which will build a table with the data from each Student instance that was created. This created a table dynamically which contained a First Name, Last Name, and Email.
