@@ -112,4 +112,4 @@ I then looked into MySQL server database and reviewed some of the documentation 
 
 #### Video Course
 
-**Progress**:
+**Progress**: Started a new web application project that consisted of a simple student database. The first class is the **Student** class which will have an id, first name, last name, and email address. After this, I created a **StudentDbUtil** class which will do all all of the heavy lifting behind the screen. In this class, there is a DataSource for a connection pool, and there also is a **Connection**, **Statement**, and **Result** objects so handle my sql processes. Once this utility class initiates, it sends a query to the MySQL database and returns all of the students currently available. Finally, it closes all connections from the DB and returns the connection to the connection pool.
