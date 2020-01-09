@@ -120,4 +120,8 @@ Finally, the **list-students.jsp** will then call the **.getAttribute** method f
 
 ### January 9, 2020
 
-#### Video Course 
+#### Video Course
+
+I went back and removed all of the scriplet code I used in the JSP file, and substituted it with JSTL instead. This required that I install the JSTL jar files in my project, and then replace the scriplet code with the appropriate JSTL tag.
+
+After adding the JSTL tags, i then created a **web.xml** file that would direct the the user to a welcome file while using my development URL. This will help with keeping a URL more presentable in the long run. I also learned you can use this xml file to direct the user to other index files in different formats.
