@@ -113,3 +113,11 @@ I then looked into MySQL server database and reviewed some of the documentation 
 #### Video Course
 
 **Progress**: Started a new web application project that consisted of a simple student database. The first class is the **Student** class which will have an id, first name, last name, and email address. After this, I created a **StudentDbUtil** class which will do all all of the heavy lifting behind the screen. In this class, there is a DataSource for a connection pool, and there also is a **Connection**, **Statement**, and **Result** objects so handle my sql processes. Once this utility class initiates, it sends a query to the MySQL database and returns all of the students currently available. Finally, it closes all connections from the DB and returns the connection to the connection pool.
+
+Then **StudentControllerServlet** is the next class in this application. This class initially calls the **StudentDbUtil** class so that it can make make the connection and return the data from the the database. This servlet also provides the JDBC information (DataSource) needed in order to connect to the DB. The util class then processes the **doGet** method by calling a **listStudents** method and passing the **request** and **response**. The listStudents method then creates a list of Student objects from the data that was returned by the StudentDbUtil class. In this same method, we set the attribute as part of the the request object so that we can later use this information in our JSP. And finally, the same listStudents method then dispatches the request to the appropriate JSP, **list-students.jsp** and forwards both the **request** and **response** objects.
+
+Finally, the **list-students.jsp** will then call the **.getAttribute** method from the request object in order to obtain the list of students. Since this method only returns a list of objects, we downcast it to **(List<Students>)** so that we can save the data to a List object. And from this point, we then put together our HTML so that we can display all the information is a table in three differenct columns, **First Name**, **Last Name**, and **Email**.
+
+### January 9, 2020
+
+#### Video Course 
