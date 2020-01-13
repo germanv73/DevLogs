@@ -122,15 +122,15 @@ Finally, the **list-students.jsp** will then call the **.getAttribute** method f
 
 #### Video Course
 
-I went back and removed all of the scriplet code I used in the JSP file, and substituted it with JSTL instead. This required that I install the JSTL jar files in my project, and then replace the scriplet code with the appropriate JSTL tag.
+**Progress**:I went back and removed all of the scriplet code I used in the JSP file, and substituted it with JSTL instead. This required that I install the JSTL jar files in my project, and then replace the scriplet code with the appropriate JSTL tag.
 
 After adding the JSTL tags, i then created a **web.xml** file that would direct the the user to a welcome file while using my development URL. This will help with keeping a URL more presentable in the long run. I also learned you can use this xml file to direct the user to other index files in different formats.
 
 ### January 10, 2020
 
-### Video Course
+#### Video Course
 
-A couple of new features were added to the web application. The first feature was to add a new student to the database. The first part was updating the list-students.jsp. In this file, I only added a button above the student table. This button then called a new file called **add-student-form-jsp**. The add-student-form.jsp file then provided a simple form with input text fields so that the user could submit the student data. This jsp also sent a GET method to the StudentControllerServlet and a **ADD** command with the input data once the button was selected to add the student. If the user chooses to not add a new student, there is a link at the bottom of the page so that the user may go back home to the show-students.jsp page. Once the StudentControllerServlet receives the data, the **doGet** method is called where the command is read and processed accordingly.
+**Progress**: A couple of new features were added to the web application. The first feature was to add a new student to the database. The first part was updating the list-students.jsp. In this file, I only added a button above the student table. This button then called a new file called **add-student-form-jsp**. The add-student-form.jsp file then provided a simple form with input text fields so that the user could submit the student data. This jsp also sent a GET method to the StudentControllerServlet and a **ADD** command with the input data once the button was selected to add the student. If the user chooses to not add a new student, there is a link at the bottom of the page so that the user may go back home to the show-students.jsp page. Once the StudentControllerServlet receives the data, the **doGet** method is called where the command is read and processed accordingly.
 
 First, if the command was null or no data was passed, the command is set to **LIST**. Then, the command is processed with a **switch** statement where the first option is, if the command == "LIST", the listStudents method is called. If the command == "ADD", then the addStudent method is called, and finally, we added a catch all that would **default** to the listStudent method. When the addStudent method is called, the information from the add-student-form.jsp is read in from the request object and then assigned to its respective variable; firstName, lastName, and email. Then, these variables are used to create a new Student object and then, we call **StudentDbUtil.addStudent()** to add the student to the database. Then, we call the listStudents method to send back to the main page where all the students are then displayed.
 
@@ -148,7 +148,7 @@ The next step was to create an **update-student-form.jsp**. In this form, the sa
 
 #### Video Course
 
-Continuing with the Update feature, in the StudentControllerServlet, the next step is to add a case to the switch statement called **UPDATE** which will then call an **updateStudent()** method. In the udpateStudent() method, we will create a Student object with the data from the update form, perform the update on the databse, and then send the user back to the list-students.jsp.
+**Progress**: Continuing with the Update feature, in the StudentControllerServlet, the next step is to add a case to the switch statement called **UPDATE** which will then call an **updateStudent()** method. In the udpateStudent() method, we will create a Student object with the data from the update form, perform the update on the databse, and then send the user back to the list-students.jsp.
 
 So the first step is to assign all the parameters from the update form to their corresponding variables (id, firstName, lastName, email). Then, we create a new Student object with these variables. Next, we call **StudentDbUtil.updateStudent()** and pass the newly created Student object. And finally, we send the user back to the list-students.jsp.
 
@@ -158,7 +158,7 @@ The next step is to update the StudentDbUtil class with the new **updateStudent(
 
 #### Video Course
 
-I added a new feature which will allow the user to **DELETE** a student from the database. The first step is to update the list-students.jsp page so that there is a link to delete a student. Then, the StudentControllerServlet will process the DELETE command. And finally, the StudentDbUtil class will delete the requested student.
+**Progress**: I added a new feature which will allow the user to **DELETE** a student from the database. The first step is to update the list-students.jsp page so that there is a link to delete a student. Then, the StudentControllerServlet will process the DELETE command. And finally, the StudentDbUtil class will delete the requested student.
 
 In the list-students.jsp file, I first added a Delete option right next to the Update link in the same data cell. Next, I used the JSTL tag **<c:url></c:url>** so that I could link it to the text **Delete** in the data cell. Inside the URL JSTL tag, I used the **<c:param></c:param>** tag in order to pass a couple of variables to the StudentControllerServlet. The first command was the **DELETE** value. The second parameter is the student id so that we know which student we need to delete. Finally, I added and href for the Delete text and referenced the delete tag I created. One last thing I did was added a simple prompt with Javascript to ensure the user wants to proceed. If the user cancels, nothing happens but if the user selects okay, then the user is directed to the href link (delete link).
 
