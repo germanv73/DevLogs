@@ -146,10 +146,22 @@ The next step was to create an **update-student-form.jsp**. In this form, the sa
 
 ### January 11, 2020
 
-### Video Course
+#### Video Course
 
-Continuing the Update featured, in the StudentControllerServlet, the next step is to add a case to the switch statement called **UPDATE** which will then call an **updateStudent()** method. In the udpateStudent() method, we will create a Student object with the data from the update form, perform the update on the databse, and then send the user back to the list-students.jsp.
+Continuing with the Update feature, in the StudentControllerServlet, the next step is to add a case to the switch statement called **UPDATE** which will then call an **updateStudent()** method. In the udpateStudent() method, we will create a Student object with the data from the update form, perform the update on the databse, and then send the user back to the list-students.jsp.
 
 So the first step is to assign all the parameters from the update form to their corresponding variables (id, firstName, lastName, email). Then, we create a new Student object with these variables. Next, we call **StudentDbUtil.updateStudent()** and pass the newly created Student object. And finally, we send the user back to the list-students.jsp.
 
 The next step is to update the StudentDbUtil class with the new **updateStudent()** method we called from the StudentControllerServlet. This method will do all of the heavy lifting when updating the student in the database. The first thing is to create a connection and a prepared statement variable. I then get a connection from dataSource and assign it to my connection. Then I create a SQL statement to update the student that matches the ID. Next, I set the SQL statement into a prepared statement and assign all the respective values to their corresponding parameters. After this, I then execute the statement so that the database can make the changes. The final step is to the close() all of the JDBC objects.
+
+### January 12, 2020
+
+#### Video Course
+
+I added a new feature which will allow the user to **DELETE** a student from the database. The first step is to update the list-students.jsp page so that there is a link to delete a student. Then, the StudentControllerServlet will process the DELETE command. And finally, the StudentDbUtil class will delete the requested student.
+
+In the list-students.jsp file, I first added a Delete option right next to the Update link in the same data cell. Next, I used the JSTL tag **<c:url></c:url>** so that I could link it to the text **Delete** in the data cell. Inside the URL JSTL tag, I used the **<c:param></c:param>** tag in order to pass a couple of variables to the StudentControllerServlet. The first command was the **DELETE** value. The second parameter is the student id so that we know which student we need to delete. Finally, I added and href for the Delete text and referenced the delete tag I created. One last thing I did was added a simple prompt with Javascript to ensure the user wants to proceed. If the user cancels, nothing happens but if the user selects okay, then the user is directed to the href link (delete link).
+
+The next step is to update the StudentControllerServlet so that it can process the DELETE command. In the switch statement, I added a case for the DELETE command, and called a **deleteStudent()** method. In the deleteStudent method, I read in the student id parameter from the request object and assign it to a string variable. I then call the **deleteStudent** method from the StudentDbUtil class and pass in the student id. And lastly, I send the user back to the list-students.jsp.
+
+The final update is made to the StudentDbUtil so that it can actually delete the student selected by the user. The first thing to do is to define the **deleteStudent** method that I previously called from the StudentControllerServlet class. In this method, I create a Connection variable and a Prepared Statement variable. Then, I convert the student ID to an integer that I passed from the StudentControllerServlet. Next, I get a connection from the the DataSource (or connection pool) and I also create an SQL statement to delete a student. After this, I prepare my statement by assigning the SQL query, and assign the appropriate parameters for the prepared statement. And then I actually execute the the statement. Finally, I then close all of my JDBC objects to prevent any issues in the future.
