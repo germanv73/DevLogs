@@ -165,3 +165,7 @@ In the list-students.jsp file, I first added a Delete option right next to the U
 The next step is to update the StudentControllerServlet so that it can process the DELETE command. In the switch statement, I added a case for the DELETE command, and called a **deleteStudent()** method. In the deleteStudent method, I read in the student id parameter from the request object and assign it to a string variable. I then call the **deleteStudent** method from the StudentDbUtil class and pass in the student id. And lastly, I send the user back to the list-students.jsp.
 
 The final update is made to the StudentDbUtil so that it can actually delete the student selected by the user. The first thing to do is to define the **deleteStudent** method that I previously called from the StudentControllerServlet class. In this method, I create a Connection variable and a Prepared Statement variable. Then, I convert the student ID to an integer that I passed from the StudentControllerServlet. Next, I get a connection from the the DataSource (or connection pool) and I also create an SQL statement to delete a student. After this, I prepare my statement by assigning the SQL query, and assign the appropriate parameters for the prepared statement. And then I actually execute the the statement. Finally, I then close all of my JDBC objects to prevent any issues in the future.
+
+### January 13, 2020
+
+**Progress**: 
