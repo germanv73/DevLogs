@@ -168,4 +168,4 @@ The final update is made to the StudentDbUtil so that it can actually delete the
 
 ### January 13, 2020
 
-**Progress**: 
+**Progress**: I looked into deploying my application to a remote server and found that my current LAMP server did not have Tomcat installed. I reviewed sever guides and documentation on how to install Tomcat and how to deploy my WAR file to my remote server. I also had to create a new database in the remote server so further documentation had to be looked into in order to do so.
