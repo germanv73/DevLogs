@@ -171,6 +171,10 @@ The final update is made to the StudentDbUtil so that it can actually delete the
 **Progress**: I looked into deploying my application to a remote server and found that my current LAMP server did not have Tomcat installed. I reviewed sever guides and documentation on how to install Tomcat and how to deploy my WAR file to my remote server. I also had to create a new database in the remote server so further documentation had to be looked into in order to do so.
 
 
-#### January 15, 2020
+### January 16, 2020
 
-**Progress**: My web application is finally up and running on a remote web server. I also looked into how to create several instances in Tomcat so that I can host several different applications at once. This topic proved to be a bit more difficult so I decided not to spend any more time, for now, trying to figure this out. I felt I was spending too much time trying to understand the documentation thatn actually coding which is my main concern. I will revisit this topic at another time.
+**Progress**: My web application is finally up and running on a remote web server. I also looked into how to create several instances in Tomcat so that I can host several different applications at once. This topic proved to be a bit more difficult so I decided not to spend any more time, for now, trying to figure this out. I felt I was spending too much time trying to understand the documentation that actually coding which is my main concern. I will revisit this topic at another time.
+
+### January 17, 2020
+
+**Progress**: I started a new project today that will consist of past and current Major League Baseball players and track their statistics. Today, I only initiated the project, created the directory for the project, created the context xml file that will hold my Java DataBase Connection information, and the database. In the database, I have only created a table that will hold the most basic information of a player such as their name, position, batting/throwing hands, DOB, and birthplace. I only created this information for now so that I could soon begin to create all my JSPs and servlet. I will revisit the topic of actual statistics at a later date once I have a better idea of how to handle all the data.
