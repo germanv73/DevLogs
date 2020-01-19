@@ -181,4 +181,4 @@ The final update is made to the StudentDbUtil so that it can actually delete the
 
 ### January 18, 2020
 
-**Progress**: 
+**Progress**: I created a simple servlet in order to test my database connection but it turned out there were a couple of things that I had not yet configured correctly. The first thing I configure was Tomcat; it had not been imported/connected to my new project. Once I configured Tomcat, I tried my servlet again but this time I received an error message stating a **Public Key Retrieval is not allowed**. It turned out I had to update my username/password in MySQL so that I could log in with **mysql_native_password** instead. Once I made this change in mySQL and updated my context.xml file in my project, I was able to successfully access and retrieve data from the database. With the test servlet, I only access the data, and then printed it out to the browser just so that I could confirm the connection was working.
