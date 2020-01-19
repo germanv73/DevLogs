@@ -178,3 +178,7 @@ The final update is made to the StudentDbUtil so that it can actually delete the
 ### January 17, 2020
 
 **Progress**: I started a new project today that will consist of past and current Major League Baseball players and track their statistics. Today, I only initiated the project, created the directory for the project, created the context xml file that will hold my Java DataBase Connection information, and the database. In the database, I have only created a table that will hold the most basic information of a player such as their name, position, batting/throwing hands, DOB, and birthplace. I only created this information for now so that I could soon begin to create all my JSPs and servlet. I will revisit the topic of actual statistics at a later date once I have a better idea of how to handle all the data.
+
+### January 18, 2020
+
+**Progress**: 
