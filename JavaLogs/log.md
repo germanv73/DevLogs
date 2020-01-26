@@ -188,3 +188,9 @@ The final update is made to the StudentDbUtil so that it can actually delete the
 #### Book Review
 
 **Progress**: I went back and reviewed **if**, **if ... else** selection statements and **while** loops. I then completed several practice problems to strengthen the information I covered. Then I continued to read about the **for** loop, **do/while** loop, and the **switch** statement.
+
+### January 25, 2020
+
+#### Book Review
+
+**Progress**: Continued to read more about switch statements, **break** and **continue** statements. Additionally, this chapter covered logical operators and gave a summary over structured programming.
